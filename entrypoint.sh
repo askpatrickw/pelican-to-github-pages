@@ -29,7 +29,7 @@ git config user.name "${GITHUB_ACTOR}"
 git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 if [ "$GH_PAGES_CNAME" != "none" ]
 then
-    echo "$GH_PAGES_CNAME" > CNAME
+    echo "$GH_PAGES_CNAME" > docs/CNAME
 fi
 git add .
 
