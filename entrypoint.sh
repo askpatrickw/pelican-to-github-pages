@@ -18,8 +18,8 @@ if [ -n "$PELICAN_THEME_FOLDER" ]; then
     popd
 fi
 
-echo 'Building site 👷 '
-pelican ${PELICAN_CONTENT_FOLDER:=content} -s ${PELICAN_CONFIG_FILE:=publishconf.py}
+echo 'Building site based on pelicanconf.py settings'
+pelican
 
 echo 'Publishing to GitHub Pages 📤 '
 git init
